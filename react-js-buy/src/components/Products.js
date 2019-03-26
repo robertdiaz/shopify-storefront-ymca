@@ -15,8 +15,11 @@ class Products extends Component {
     });
 
     return (
-      <div className="Product-wrapper">
-        {products}
+      <div className="Content-wrapper">
+        <h1 className="Products-title">Products</h1>
+        <div className="Product-wrapper">
+          {products}
+        </div>
       </div>
     );
   }
