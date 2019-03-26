@@ -20,7 +20,7 @@ You will need the following things properly installed on your computer.
 
 ## Configuring
 
-The `domain` and `storefrontAccessToken` credentials for the store have already been updated in `src/index.js` (found here):
+The `domain` and `storefrontAccessToken` credentials for the store have already been updated in `src/index.js` (lines 8-11, as seen below):
 
 ```js
 const client = Client.buildClient({
