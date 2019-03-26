@@ -85,16 +85,30 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App__header">
-          {!this.state.isCartOpen &&
-            <div className="App__view-cart-wrapper">
-              <button className="App__view-cart" onClick={()=> this.setState({isCartOpen: true})}>Cart</button>
-            </div>
-          }
+          <ul className="top-links">
+            <li><a href="#">Sign in</a></li>
+            {!this.state.isCartOpen &&
+              <li className="App__view-cart-wrapper">
+                <button className="App__view-cart" onClick={()=> this.setState({isCartOpen: true})}>Cart</button>
+              </li>
+            }
+          </ul>
+          <div className="App__logo">
+            <a href="#"><img src="https://cdn.shopify.com/s/files/1/0156/2951/6900/files/ymca_grn_rgb_180x.jpeg?v=1548866508" alt="First Coast YMCA"/></a>
+          </div>
           <div className="App__title">
-            <h1>{this.state.shop.name}: React Example</h1>
+            <h1>{this.state.shop.name}: Storefront</h1>
             <h2>{this.state.shop.description}</h2>
           </div>
         </header>
+        <nav className="navBar">
+          <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+          </ul>
+        </nav>
         <Products
           products={this.state.products}
           client={this.props.client}
