@@ -20,7 +20,7 @@ You will need the following things properly installed on your computer.
 
 ## Configuring
 
-If you would like to connect your store to this example, open up `src/index.js` and update the `domain` and `storefrontAccessToken`:
+The `domain` and `storefrontAccessToken` credentials for the store have already been updated in `src/index.js` (found here):
 
 ```js
 const client = Client.buildClient({
