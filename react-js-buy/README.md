@@ -11,7 +11,7 @@ You will need the following things properly installed on your computer.
 * [Yarn](https://yarnpkg.com/en/)
 
 ## Installation
-## (originally from https://github.com/Shopify/storefront-api-examples.git)
+(originally from https://github.com/Shopify/storefront-api-examples.git)
 
 * `git clone https://github.com/robertdiaz/shopify-storefront-ymca.git` this repository
 * `cd storefront-api-examples`
