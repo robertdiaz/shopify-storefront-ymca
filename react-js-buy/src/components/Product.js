@@ -60,9 +60,11 @@ class Product extends Component {
     });
     return (
       <div className="Product">
-        {this.props.product.images.length ? <img src={variantImage.src} alt={`${this.props.product.title} product shot`}/> : null}
+        <div className="Photo__container">
+          {this.props.product.images.length ? <img src={variantImage.src} alt={`${this.props.product.title} product shot`}/> : null}
+        </div>
         <h5 className="Product__title">{this.props.product.title}</h5>
-        <span className="Product__price">${variant.price}</span>
+        <span className="Product__points"> Points</span>
         {variantSelectors}
         <label className="Product__option">
           Quantity
