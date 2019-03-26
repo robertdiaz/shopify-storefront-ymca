@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import Client from 'shopify-buy';
-import '../../shared/app.css';
 import './app.css';
 import './ymca-custom.css';
 
